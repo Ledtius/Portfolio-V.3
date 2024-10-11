@@ -13,8 +13,9 @@ html {
 }
 
 body {
+  position: relative;
   font-size: 1.6rem;
-  min-height: 100vh;
+  min-height: 300vh;
   margin: 0;
   display: grid;
   grid-template:
