@@ -19,13 +19,26 @@ body {
   margin: 0;
   display: grid;
   grid-template:
-    "header"
+    /* "header" 94.8125px */
     "hero"
     "job-exp"
     "proyects"
     "skills"
     "about-me"
     "footer";
+}
+
+@media (min-width: 1024px) {
+  body {
+    grid-template:
+      /* "header" 110.812px */
+      "hero"
+      "job-exp"
+      "proyects"
+      "skills"
+      "about-me"
+      "footer";
+  }
 }
 
 header {
