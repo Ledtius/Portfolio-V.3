@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template:
     /* "header" 94.8125px */
-    "hero"
+    "hero" 60rem
     "job-exp"
     "proyects"
     "skills"

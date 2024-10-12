@@ -1,7 +1,8 @@
 header {
   width: 100%;
   background-color: transparent;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(2rem);
+  /* back */
   position: fixed;
   opacity: 1;
 }
@@ -37,7 +38,7 @@ header {
 .header__open-menu-bttn {
   border: none;
   cursor: pointer;
-  background-color: black;
+  background-color: transparent;
   transition: transform 0.1s;
 }
 
@@ -112,6 +113,8 @@ header {
   body {
     background-color: blue;
   }
+
+
   .header__open-menu-bttn {
     display: none;
   }
@@ -126,7 +129,7 @@ header {
     position: relative;
     display: flex;
     opacity: 1;
-    background-color: black;
+    background-color: transparent;
     pointer-events: all;
   }
 

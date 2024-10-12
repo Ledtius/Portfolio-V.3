@@ -1,3 +1,21 @@
-.hero{
-    background-color: black;
+.hero {
+  background-image: url("https://cdn.pixabay.com/photo/2024/05/21/19/57/computer-8779040_1280.jpg");
+  object-fit: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: 105rem; */
+  object-position: center;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-image: url("https://pixabay.com/get/g8a25ab3b43982edb7548d137087b7437f1d8b67e706329b22d1f2857a19b5e53ea69e6d1504660917a5d2293a828c7c5.jpg");
+    object-fit: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 105rem; */
+    object-position: center;
+  }
 }
