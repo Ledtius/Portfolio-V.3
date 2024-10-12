@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+h1{
+  font-size: 4rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -20,7 +29,7 @@ body {
   display: grid;
   grid-template:
     /* "header" 94.8125px */
-    "hero" 60rem
+    "hero" 35%
     "job-exp"
     "proyects"
     "skills"
@@ -30,9 +39,10 @@ body {
 
 @media (min-width: 1024px) {
   body {
+    font-size: 1.6rem;
     grid-template:
       /* "header" 110.812px */
-      "hero"
+      "hero" 110vh
       "job-exp"
       "proyects"
       "skills"

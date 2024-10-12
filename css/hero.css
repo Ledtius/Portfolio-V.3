@@ -1,21 +1,53 @@
 .hero {
-  background-image: url("https://cdn.pixabay.com/photo/2024/05/21/19/57/computer-8779040_1280.jpg");
+  background-image: url("https://pixabay.com/get/ge5567384488c4c08f59ddd1b2cbe311c5fad9ecc0e39d7a10ec8a5bc1445452d2f47039406a2a056a0261fbe1e6ce6ac4f412db99fb65ea7fec71712c29d92a5_1920.jpg");
   object-fit: cover;
-  background-attachment: fixed;
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-position: 105rem; */
-  object-position: center;
+  background-attachment: fixed;
+  /* object-position: center center; */
+  background-position: 40%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.hero__presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__item {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: transparent;
+  backdrop-filter: blur(1rem); 
+  border-radius: 2rem;
+  color: #f2f2f2;
+  padding: 3.2rem;
+}
+.hero__description {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.hero__user-photo {
+  max-width: 100%;
+  object-fit: cover;
+  width: 18rem;
+  height: 18rem;
+  /* background-color: transparent;
+  backdrop-filter: blur(1rem); */
 }
 
 @media (min-width: 1024px) {
   .hero {
-    background-image: url("https://pixabay.com/get/g8a25ab3b43982edb7548d137087b7437f1d8b67e706329b22d1f2857a19b5e53ea69e6d1504660917a5d2293a828c7c5.jpg");
+    background-image: url("https://pixabay.com/get/ge5567384488c4c08f59ddd1b2cbe311c5fad9ecc0e39d7a10ec8a5bc1445452d2f47039406a2a056a0261fbe1e6ce6ac4f412db99fb65ea7fec71712c29d92a5_1920.jpg");
+
     object-fit: cover;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: 105rem; */
-    object-position: center;
+    /* object-position: center center; */
+    background-position: center;
   }
 }
