@@ -18,17 +18,57 @@
 }
 
 .hero__item {
+  /* width: 30rem; */
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   background-color: transparent;
-  backdrop-filter: blur(1rem); 
+  backdrop-filter: blur(1rem);
   border-radius: 2rem;
   color: #f2f2f2;
-  padding: 3.2rem;
+  padding: 1.2rem;
+  min-width: 290px;
 }
+
 .hero__description {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+  width: 200px;
+  animation: writing 1.5s steps(35),
+    transparent 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hero__knowledge {
+  font-weight: 550;
+  width: 260px;
+
+  animation: writing 2.5s steps(35),
+    transparent 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  animation-delay: 3s;
+
+}
+
+@keyframes writing {
+  from {
+    width: 0px;
+  }
+}
+
+@keyframes transparent {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .hero__user-photo {
@@ -36,8 +76,7 @@
   object-fit: cover;
   width: 18rem;
   height: 18rem;
-  /* background-color: transparent;
-  backdrop-filter: blur(1rem); */
+  border-radius: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -49,5 +88,45 @@
     background-size: cover;
     /* object-position: center center; */
     background-position: center;
+  }
+
+  .hero__item {
+    /* width: 30rem; */
+    width: 464px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+    color: #f2f2f2;
+    padding: 1.2rem;
+    min-width: 290px;
+  }
+
+  .hero__description {
+    width: 260px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__item {
+    /* width: 30rem; */
+    width: 464px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+    color: #f2f2f2;
+    padding: 1.2rem;
+    min-width: 290px;
+  }
+
+  .hero__description {
+    width: 260px;
   }
 }
