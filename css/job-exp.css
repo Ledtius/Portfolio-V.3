@@ -21,5 +21,52 @@
   width: 3rem;
 }
 
+.job-exp__list {
+  display: flex;
+  align-items: center;
+
+  padding: 0 4rem 0 4rem;
+}
+
+.job-exp__item {
+  position: relative;
+  list-style: none;
+}
+
+.job-exp__figure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.job-exp__date-icon {
+  height: 2rem;
+  width: 2rem;
+  padding: 2px;
+  background-color: yellow;
+  border-radius: 6px;
+}
+
+.job-exp__job{
+  margin: 1rem 0 1rem 2rem;
+}
+
+.job-exp__job::before {
+  content: "";
+  position: absolute;
+  background-color: #f2f2f2;
+  height: 85%;
+  width: 3px;
+  left: 5px;
+  border-left: 1px solid;
+  margin: 0 4rem 0 0 0;
+}
+
+.job-exp__pharagraph{
+  margin: 2rem 0 1rem 2rem;
+
+}
+
 @media (min-width: 1024px) {
 }

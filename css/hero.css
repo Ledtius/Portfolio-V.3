@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-image: url("https://pixabay.com/get/gfe043a392a264df755dbaa323df9ae184753cc63a0d80b3e16e1d31c3534e87a6c6c2848685d6a40794e996674aa593dbab7618e70acb20bb24e85b9bc32cd4f_1920.jpg");
+  background-image: url(/image/hero-bg.jpg);
   object-fit: cover;
   background-size: cover;
   background-attachment: fixed;
