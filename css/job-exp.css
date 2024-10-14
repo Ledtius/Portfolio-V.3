@@ -5,6 +5,7 @@
 
   flex-flow: column nowrap;
   align-items: center;
+  position: relative;
 }
 
 .job-exp__icon-title {
@@ -24,8 +25,16 @@
 .job-exp__list {
   display: flex;
   align-items: center;
-
+  flex-flow: column wrap;
+  gap: 4rem;
   padding: 0 4rem 0 4rem;
+}
+
+.job-exp__image {
+  /* margin: 4rem 0 0 0; */
+  width: 100%;
+  max-width: 20rem;
+  margin: 2rem;
 }
 
 .job-exp__item {
@@ -40,33 +49,66 @@
   margin: 0;
 }
 
+.job-exp__date {
+  color: #dcdcdc;
+}
+
 .job-exp__date-icon {
   height: 2rem;
   width: 2rem;
   padding: 2px;
-  background-color: yellow;
+  background-color: #ffeb3b;
   border-radius: 6px;
 }
 
-.job-exp__job{
+.job-exp__job {
+  color: #e0e0e0;
   margin: 1rem 0 1rem 2rem;
+}
+
+.job-exp__black {
+  color: #ffeb3b;
 }
 
 .job-exp__job::before {
   content: "";
   position: absolute;
-  background-color: #f2f2f2;
+  background-color: #a8a8a8;
   height: 85%;
   width: 3px;
-  left: 5px;
-  border-left: 1px solid;
+  left: 7px;
+  border-left: 1px solid #a8a8a8;
   margin: 0 4rem 0 0 0;
 }
 
-.job-exp__pharagraph{
+.job-exp__pharagraph {
   margin: 2rem 0 1rem 2rem;
+}
 
+.div {
+  width: 10rem;
+}
+
+.job-exp__wave {
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  top: -19rem;
+}
+
+.job-exp__wave-2 {
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  bottom: -1px;
 }
 
 @media (min-width: 1024px) {
+  .job-exp__pharagraph {
+    max-width: 78rem;
+  }
+
+  .job-exp__list {
+    flex-flow: row nowrap;
+ }
 }

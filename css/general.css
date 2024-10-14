@@ -20,6 +20,7 @@ h2{
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+ scroll-padding: 10rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -35,7 +36,7 @@ body {
   display: grid;
   grid-template:
     /* "header" 94.8125px */
-    "hero" 37%
+    "hero" 39%
     "job-exp"
     "proyects"
     "skills"
@@ -66,7 +67,7 @@ body {
     grid-template:
       /* "header" 110.812px */
       "hero" 140vh
-      "job-exp"
+      "job-exp" 
       "proyects"
       "skills"
       "about-me"

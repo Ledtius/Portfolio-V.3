@@ -134,6 +134,10 @@ header {
     pointer-events: all;
   }
 
+  .header__logo-text{
+    margin:0;
+  }
+
   .header__list {
     display: flex;
     flex-flow: row nowrap;
