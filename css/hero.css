@@ -1,5 +1,6 @@
 .hero {
-  background-image: url("https://pixabay.com/get/ge5567384488c4c08f59ddd1b2cbe311c5fad9ecc0e39d7a10ec8a5bc1445452d2f47039406a2a056a0261fbe1e6ce6ac4f412db99fb65ea7fec71712c29d92a5_1920.jpg");
+  position: relative;
+  background-image: url("https://pixabay.com/get/gfe043a392a264df755dbaa323df9ae184753cc63a0d80b3e16e1d31c3534e87a6c6c2848685d6a40794e996674aa593dbab7618e70acb20bb24e85b9bc32cd4f_1920.jpg");
   object-fit: cover;
   background-size: cover;
   background-attachment: fixed;
@@ -39,29 +40,36 @@
 
 .hero__title {
   margin: 0;
-  width: 200px;
-  animation: writing 1.5s steps(35),
-    transparent 0.5s step-end infinite alternate;
+  width: 190px;
+  animation: writing 2.5s steps(35), transparent 0.5s step-end alternate;
   white-space: nowrap;
   overflow: hidden;
+  /* border-right: 1px solid; */
 }
+
+
 
 .hero__knowledge {
   font-weight: 550;
   width: 260px;
 
-  animation: writing 2.5s steps(35),
+  animation: writing 2.5s steps(35) forwards,
     transparent 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
+  visibility: hidden;
   border-right: 1px solid;
-  animation-delay: 3s;
-
+  animation-delay: 2s;
 }
 
 @keyframes writing {
-  from {
+  0% {
+    visibility: visible;
     width: 0px;
+  }
+  100% {
+    width: 260px;
+    visibility: visible;
   }
 }
 
@@ -79,10 +87,15 @@
   border-radius: 100%;
 }
 
+.hero__wave{
+  position: absolute;
+  width: 100%;
+  /* height: 30rem; */
+  bottom: -1px;
+}
+
 @media (min-width: 1024px) {
   .hero {
-    background-image: url("https://pixabay.com/get/ge5567384488c4c08f59ddd1b2cbe311c5fad9ecc0e39d7a10ec8a5bc1445452d2f47039406a2a056a0261fbe1e6ce6ac4f412db99fb65ea7fec71712c29d92a5_1920.jpg");
-
     object-fit: cover;
     background-attachment: fixed;
     background-size: cover;
@@ -92,6 +105,8 @@
 
   .hero__item {
     /* width: 30rem; */
+    position: relative;
+    bottom: 10rem;
     width: 464px;
     display: flex;
     flex-flow: row nowrap;
@@ -108,11 +123,17 @@
   .hero__description {
     width: 260px;
   }
+
+  .hero__wave{
+    bottom: -2px;
+  }
 }
 
 @media (min-width: 768px) {
   .hero__item {
     /* width: 30rem; */
+    position: relative;
+    bottom: 5rem;
     width: 464px;
     display: flex;
     flex-flow: row nowrap;

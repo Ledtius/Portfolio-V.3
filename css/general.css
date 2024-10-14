@@ -6,19 +6,25 @@
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
-p{
+p {
   font-size: 1.5rem;
 }
-
+h2{
+  font-size: 2.4rem;
+}
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+}
+
+.hero__wave{
+  grid-area: "wave";
 }
 
 body {
@@ -29,7 +35,7 @@ body {
   display: grid;
   grid-template:
     /* "header" 94.8125px */
-    "hero" 35%
+    "hero" 37%
     "job-exp"
     "proyects"
     "skills"
@@ -37,12 +43,12 @@ body {
     "footer";
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px){
   body {
     font-size: 1.6rem;
     grid-template:
       /* "header" 110.812px */
-      "hero" 110vh
+      "hero" 120vh
       "job-exp"
       "proyects"
       "skills"
@@ -50,6 +56,25 @@ body {
       "footer";
   }
 }
+
+@media (min-width: 1024px) {
+  h2{
+    font-size: 3.2rem;
+  }
+  body {
+    font-size: 1.6rem;
+    grid-template:
+      /* "header" 110.812px */
+      "hero" 140vh
+      "job-exp"
+      "proyects"
+      "skills"
+      "about-me"
+      "footer";
+  }
+}
+
+
 
 header {
   grid-area: header;
