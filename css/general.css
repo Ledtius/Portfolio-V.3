@@ -67,11 +67,11 @@ body {
     grid-template:
       /* "header" 110.812px */
       "hero" 140vh
-      "job-exp" 
-      "proyects"
-      "skills"
-      "about-me"
-      "footer";
+      "job-exp" 60vh
+      "proyects"100vh
+      "skills"100vh
+      "about-me"100vh
+      "footer" 100vh;
   }
 }
 

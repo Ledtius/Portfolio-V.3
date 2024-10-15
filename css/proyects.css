@@ -1,3 +1,15 @@
-.proyects{
-    background-color: #f2f2f2;
+.proyects {
+  background-color: #f2f2f2;
+}
+
+.proyects__icon-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.proyects__icon {
+  width: 3rem;
+  height: 3rem;
 }

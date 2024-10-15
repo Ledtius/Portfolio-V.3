@@ -52,7 +52,7 @@ header {
   padding: 2.4rem 1.8rem;
   border: none;
   cursor: pointer;
-  background-color: #124F88;
+  background-color: #124f88;
   transition: transform 0.1s;
 }
 
@@ -75,7 +75,7 @@ header {
   font-weight: 600;
   width: 100%;
   height: 100vh;
-  background-color: #124F88;
+  background-color: #124f88;
   opacity: 0;
   pointer-events: none;
   top: 0;
@@ -108,7 +108,6 @@ header {
 .menu__opened {
   opacity: 0.9;
   pointer-events: all;
-
 }
 
 @media (min-width: 1024px) {
@@ -134,8 +133,8 @@ header {
     pointer-events: all;
   }
 
-  .header__logo-text{
-    margin:0;
+  .header__logo-text {
+    margin: 0;
   }
 
   .header__list {
@@ -152,18 +151,17 @@ header {
 
   .header__link-item {
     position: relative;
+    /* transition: color 0.3s ease; */
   }
   .header__link-item::before {
     content: " ";
-    border: 1px solid #f2f2f2;
+    border: 1px solid var(--line-color, #f2f2f2);
     border-radius: 1rem;
-    background-color: #f2f2f2;
+    background-color: var(--line-color, #f2f2f2);
     position: absolute;
     bottom: 0;
     width: 10px;
     opacity: 0;
-
-    /* transition: opacity 0.7s, width 0.7s; */
     transition-duration: 0.7s;
   }
 
