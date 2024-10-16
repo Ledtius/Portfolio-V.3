@@ -18,12 +18,15 @@ headerLinkItems.forEach((link) => {
 });
 
 /* Letters color - Header */
+
+
 document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth > 1024) {
+  if (window.innerWidth) {
     // Solo ejecuta en pantallas grandes
     const headerLinks = document.querySelectorAll("header a"); // Selecciona los links del header
     const headerIcon = document.querySelector(".header__icon"); // Selecciona el ícono del header
-    const whiteSections = document.querySelectorAll(".proyects, .about-me"); // IDs de las secciones con fondo blanco
+    const headerBtns = document.querySelector(".header__icon-menu-bttn "); // Selecciona el ícono del header
+    const whiteSections = document.querySelectorAll("#proyects, #about-me"); // IDs de las secciones con fondo blanco
 
     const observerOptions = {
       root: null,
@@ -41,6 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
           if (headerIcon) {
             headerIcon.style.fill = "#124f88"; // Cambia el color del ícono a azul oscuro
           }
+          if (headerBtns) {
+            headerBtns.style.fill = "#124f88"; // Cambia el color del ícono a azul oscuro
+          }
         } else {
           // Si no está visible (en otras secciones)
           headerLinks.forEach((link) => {
@@ -49,6 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
           });
           if (headerIcon) {
             headerIcon.style.fill = "#f2f2f2"; // Cambia el color del ícono a blanco
+          }
+          if (headerBtns) {
+            headerBtns.style.fill = "#f2f2f2"; // Cambia el color del ícono a blanco
           }
         }
       });

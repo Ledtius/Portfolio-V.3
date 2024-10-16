@@ -37,7 +37,7 @@ body {
   grid-template:
     /* "header" 94.8125px */
     "hero" 39%
-    "job-exp"
+    "job-exp" 887px
     "proyects"
     "skills"
     "about-me"
@@ -50,7 +50,7 @@ body {
     grid-template:
       /* "header" 110.812px */
       "hero" 120vh
-      "job-exp"
+      "job-exp" 887px
       "proyects"
       "skills"
       "about-me"
@@ -67,7 +67,7 @@ body {
     grid-template:
       /* "header" 110.812px */
       "hero" 140vh
-      "job-exp" 60vh
+      "job-exp" 80vh
       "proyects"100vh
       "skills"100vh
       "about-me"100vh

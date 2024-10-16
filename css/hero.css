@@ -19,7 +19,8 @@
 }
 
 .hero__item {
-  /* width: 30rem; */
+  position: relative;
+  bottom: 10rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
