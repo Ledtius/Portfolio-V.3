@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
 
+  margin: 0 0 2.8rem 0;
   align-items: center;
   gap: 8px;
 }
@@ -21,6 +22,7 @@
   height: 3rem;
   width: 3rem;
 }
+
 
 .job-exp__list {
   display: flex;
@@ -34,7 +36,7 @@
   /* margin: 4rem 0 0 0; */
   width: 100%;
   max-width: 20rem;
-  margin: 2rem;
+  margin: 0 0 20rem 0;
 }
 
 .job-exp__item {
@@ -110,5 +112,13 @@
 
   .job-exp__list {
     flex-flow: row nowrap;
+    margin: 0rem 0rem 20rem 0rem;
+  }
+
+  .job-exp__image {
+    /* margin: 4rem 0 0 0; */
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 0 0 0;
   }
 }
