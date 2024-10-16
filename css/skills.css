@@ -22,7 +22,9 @@
 }
 
 .skills__techs {
-  padding: 0;
+
+
+  /* padding: 0; */
   margin: 10rem 0 10rem 0;
   display: grid;
   align-content: center;
@@ -108,6 +110,7 @@
 
 @media (min-width: 1024px) {
   .skills__techs {
+    padding: 0 17.6rem;
     margin: 10rem 0 0 0;
     grid-template-areas:
       "html css js git github"

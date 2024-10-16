@@ -1,5 +1,5 @@
 header {
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   background-color: transparent;
   backdrop-filter: blur(2rem);
@@ -172,8 +172,6 @@ header {
     width: 100%;
   }
 
-  .header__link-item:active::before {
-  }
 
   header {
     display: flex;

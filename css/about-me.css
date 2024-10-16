@@ -1,3 +1,78 @@
-.about-me{
-    background-color: #f2f2f2;
+.about-me {
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.about-me__icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.about-me__icon-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.about-me__pharagraphs {
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.about-me__photo-figure {
+  position: relative;
+  margin: 8rem 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me__photo {
+  z-index: 2;
+  object-fit: cover;
+}
+
+.about-me__figure {
+  position: absolute;
+
+  height: 30rem;
+  width: 27rem;
+  z-index: 1;
+  border-radius: 44% 56% 32% 68% / 61% 49% 51% 39%;
+  border: 1px solid #124f88;
+  background-color: #124f88;
+}
+
+.about-me__wave {
+  position: relative;
+  bottom: -1rem;
+}
+
+@media (min-width: 1024px) {
+  .about-me__all {
+    padding: 0 17.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me__photo-figure {
+    display: flex;
+    bottom: 5rem;
+  }
+
+  .about-me__photo {
+    object-fit: cover;
+    /* height: 20rem; */
+  }
+
+  .about-me__pharagraphs {
+    text-align: unset;
+    max-width: 70rem;
+  }
+  .about-me__wave {
+    position: relative;
+    bottom: -1rem;
+  }
 }
