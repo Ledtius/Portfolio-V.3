@@ -1,3 +1,125 @@
-.skills{
-   
+.skills {
+  background: #124f88;
+  position: relative;
+}
+
+.skills__icon-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 2.8rem 0;
+}
+
+.skills__title {
+  color: #f2f2f2;
+}
+
+.skills__icon {
+  width: 4rem;
+  height: 4rem;
+  fill: #f2f2f2;
+}
+
+.skills__techs {
+  padding: 0;
+  margin: 10rem 0 10rem 0;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-areas:
+    "html css"
+    "js js"
+    "git github";
+  gap: 3rem;
+}
+
+.skills__tech {
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+  border-radius: 72% 58% 52% 100% / 46% 78% 72% 63%;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+.skills__tech-icon {
+  width: 8rem;
+  height: 8rem;
+}
+.skills__tech:nth-child(1) {
+  grid-area: html;
+}
+.skills__tech:nth-child(2) {
+  grid-area: css;
+}
+.skills__tech:nth-child(3) {
+  grid-area: js;
+  width: 16rem;
+  align-self: center;
+  justify-self: center;
+}
+.skills__tech:nth-child(4) {
+  grid-area: git;
+}
+.skills__tech:nth-child(5) {
+  grid-area: github;
+}
+
+.skills__wave {
+  position: relative;
+  bottom: -9px;
+}
+
+@media (min-width: 768px) {
+  .skills__techs {
+    margin: 10rem 0 10rem 0;
+
+    grid-template-areas:
+      "html css js"
+      "git  css github";
+
+    gap: 3rem;
+  }
+
+  /*     align-self: center;
+    justify-self: center;
+ */
+  .skills__tech:nth-child(3) {
+    width: 14rem;
+  }
+
+  .skills__tech:nth-child(2) {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .skills__tech:nth-child(4) {
+    align-self: center;
+    justify-self: center;
+  }
+  .skills__tech:nth-child(5) {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills__techs {
+    margin: 10rem 0 0 0;
+    grid-template-areas:
+      "html css js git github"
+      " .   css . git    ."
+      " .   css . git    .";
+    align-items: center;
+    justify-items: center;
+  }
+
+  .skills__tech:nth-child(3) {
+    width: 14rem;
+    align-self: center;
+    justify-self: center;
+  }
 }
