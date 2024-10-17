@@ -44,6 +44,36 @@
   background-color: #124f88;
 }
 
+.about-me__button {
+  margin: 5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.about-me__button-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: #124f88;
+  text-decoration: none;
+  color: #f2f2f2;
+  transition: transform 0.5s;
+}
+
+.about-me__button-link:hover {
+  transform: scale(1.04);
+}
+
+.about-me__button-icon {
+  width: 4rem;
+  fill: #f2f2f2;
+}
+
 .about-me__wave {
   position: relative;
   bottom: -1rem;
