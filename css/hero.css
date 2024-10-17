@@ -20,7 +20,7 @@
 
 .hero__item {
   position: relative;
-  bottom: 10rem;
+  bottom: 20rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

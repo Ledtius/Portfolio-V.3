@@ -36,7 +36,7 @@ body {
   display: grid;
   grid-template:
     /* "header" 94.8125px */
-    "hero" 39%
+    "hero" 30%
     "job-exp" 
     "proyects" 
     "skills"
