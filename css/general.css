@@ -42,6 +42,20 @@ body {
     "skills"
     "about-me"
     "footer";
+    
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: white;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey; 
+  border-radius: 20px;       
 }
 
 @media (min-width: 768px) {

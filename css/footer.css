@@ -45,6 +45,8 @@ footer {
 }
 .footer__social-link {
   display: flex;
+  min-width: 204.797px;
+  text-align: center;
   align-items: center;
   gap: 8px;
   text-decoration: none;
