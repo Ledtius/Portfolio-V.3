@@ -1,6 +1,6 @@
 .hero {
   /* position: relative; */
-  background-image: url(/image/hero-bg.jpg);
+  background-image: url(/image/hero-bg.webp);
   object-fit: cover;
   background-size: cover;
   background-attachment: fixed;
