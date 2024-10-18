@@ -19,52 +19,48 @@ headerLinkItems.forEach((link) => {
 
 /* Letters color - Header */
 
-
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth) {
-    // Solo ejecuta en pantallas grandes
-    const headerLinks = document.querySelectorAll("header a"); // Selecciona los links del header
-    const headerIcon = document.querySelector(".header__icon"); // Selecciona el ícono del header
-    const headerBtns = document.querySelector(".header__icon-menu-bttn "); // Selecciona el ícono del header
-    const whiteSections = document.querySelectorAll("#proyects, #about-me"); // IDs de las secciones con fondo blanco
+    const headerLinks = document.querySelectorAll("header a");
+    const headerIcon = document.querySelector(".header__icon");
+    const headerBtns = document.querySelector(".header__icon-menu-bttn ");
+    const whiteSections = document.querySelectorAll("#proyects, #about-me");
 
     const observerOptions = {
       root: null,
-      threshold: 0.5, // Cambia el color cuando el 50% de la sección sea visible
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver(function (entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Si la sección blanca está visible
           headerLinks.forEach((link) => {
-            link.style.color = "#124f88"; // Cambia el color de los enlaces a azul oscuro
-            link.style.setProperty("--line-color", "#124f88"); // Cambia la línea del ::before a azul oscuro
+            link.style.color = "#124f88";
+            link.style.setProperty("--line-color", "#124f88");
           });
           if (headerIcon) {
-            headerIcon.style.fill = "#124f88"; // Cambia el color del ícono a azul oscuro
+            headerIcon.style.fill = "#124f88";
           }
           if (headerBtns) {
-            headerBtns.style.fill = "#124f88"; // Cambia el color del ícono a azul oscuro
+            headerBtns.style.fill = "#124f88";
           }
         } else {
-          // Si no está visible (en otras secciones)
           headerLinks.forEach((link) => {
-            link.style.color = "#f2f2f2"; // Cambia el color de los enlaces a blanco
-            link.style.setProperty("--line-color", "#f2f2f2"); // Cambia la línea del ::before a blanco
+            link.style.color = "#f2f2f2";
+            link.style.setProperty("--line-color", "#f2f2f2");
           });
           if (headerIcon) {
-            headerIcon.style.fill = "#f2f2f2"; // Cambia el color del ícono a blanco
+            headerIcon.style.fill = "#f2f2f2";
           }
           if (headerBtns) {
-            headerBtns.style.fill = "#f2f2f2"; // Cambia el color del ícono a blanco
+            headerBtns.style.fill = "#f2f2f2";
           }
         }
       });
     }, observerOptions);
 
     whiteSections.forEach((section) => {
-      observer.observe(section); // Observa las secciones con fondo blanco
+      observer.observe(section);
     });
   }
 });

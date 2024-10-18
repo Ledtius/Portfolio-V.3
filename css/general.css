@@ -37,25 +37,24 @@ body {
   grid-template:
     /* "header" 94.8125px */
     "hero" 30%
-    "job-exp" 
-    "proyects" 
+    "job-exp"
+    "proyects"
     "skills"
     "about-me"
     "footer";
-    
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: white;       
+  background: white;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: grey; 
-  border-radius: 20px;       
+  background-color: grey;
+  border-radius: 20px;
 }
 
 @media (min-width: 768px) {
@@ -64,7 +63,7 @@ body::-webkit-scrollbar-thumb {
     grid-template:
       /* "header" 110.812px */
       "hero" 120vh
-      "job-exp" 
+      "job-exp"
       "proyects"
       "skills"
       "about-me"
@@ -81,10 +80,10 @@ body::-webkit-scrollbar-thumb {
     grid-template:
       /* "header" 110.812px */
       "hero" 140vh
-      "job-exp" 
-      "proyects" 
-      "skills" 
-      "about-me" 
+      "job-exp"
+      "proyects"
+      "skills"
+      "about-me"
       "footer";
   }
 }
