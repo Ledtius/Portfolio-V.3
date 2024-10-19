@@ -31,15 +31,16 @@
 .about-me__photo {
   z-index: 2;
   object-fit: cover;
+  width: 310px;
 }
 
 .about-me__figure {
   position: absolute;
 
   height: 30rem;
-  width: 27rem;
+  width: 30rem;
   z-index: 1;
-  border-radius: 44% 56% 32% 68% / 61% 49% 51% 39%;
+  border-radius: 44% 56% 42% 68% / 61% 49% 51% 39%;
   border: 1px solid #124f88;
   background-color: #124f88;
 }

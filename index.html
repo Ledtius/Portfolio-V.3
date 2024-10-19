@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/image/photo-hero-433.webp" as="image" />
     <link rel="icon" href="image/favicon.ico" />
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/header.css" />
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="css/about-me.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/flooting-btns.css" />
-    <script src="js/menu.js" defer></script>
+
     <meta
       name="description"
       content="Calet Devia, Ingeniero de sistemas y futuro desarrollador web especializado en frontend. Portafolio con proyectos de desarrollo web en JavaScript, HTML y CSS."
@@ -155,6 +156,7 @@
           src="/image/image-job-exp.svg"
           alt="Persona reposando en un escritorio"
           class="job-exp__image"
+          loading="lazy"
         />
       </section>
       <!-- fill="#124F88" -->
@@ -190,6 +192,7 @@
             class="proyects__mockup"
             src="/image/proyect.webp"
             alt="Mockup del portfolio"
+            loading="lazy"
           />
 
           <article class="proyects__general-text">
@@ -652,11 +655,12 @@
         </article>
         <section class="about-me__photo-figure">
           <img
-            src="/image/photo-about-me.webp"
+            src="/image/photo-about-me.png"
             alt="Foto - seccion sobre mi"
             class="about-me__photo"
             loading="lazy"
           />
+
           <figure class="about-me__figure"></figure>
         </section>
       </section>
@@ -728,7 +732,7 @@
         <a
           href="mailto:calebtius@gmail.com"
           target="_blank"
-          aria-label="Arrow button"
+          aria-label="Email"
           class="floating-btns__social-link"
         >
           <svg
@@ -742,7 +746,7 @@
           </svg>
         </a>
       </figure>
-      <a href="#" class="floating-btns__link">
+      <a href="#" aria-label="Arrow button" class="floating-btns__link">
         <svg
           class="floating-btns__icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -848,5 +852,6 @@
         </p>
       </section>
     </footer>
+    <script src="js/menu.js" defer></script>
   </body>
 </html>

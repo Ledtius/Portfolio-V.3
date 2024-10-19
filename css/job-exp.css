@@ -34,6 +34,7 @@
 .job-exp__image {
   /* margin: 4rem 0 0 0; */
   width: 100%;
+  height: 100%;
   max-width: 20rem;
   margin: 0 0 20rem 0;
 }
