@@ -117,44 +117,46 @@
         </svg>
         <h2 class="job-exp__title">Experiencia laboral</h2>
       </section>
-      <ol class="job-exp__list">
-        <li class="job-exp__item">
-          <article class="job-exp__main-info">
-            <figure class="job-exp__figure">
-              <svg
-                class="job-exp__date-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l352 0 0 256c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256z"
-                ></path>
-              </svg>
-              <time datetime="2023-06" class="job-exp__date"
-                >Junio 2023 - Febrero 2024</time
-              >
-            </figure>
-            <h3 class="job-exp__job">
-              Analista de Requerimientos -<b class="job-exp__black">
-                OMEC MX
-              </b>
-            </h3>
-          </article>
-          <article class="job-exp__description">
-            <p class="job-exp__pharagraph">
-              Practicante responsable de la extracción de requerimientos y el
-              diseño de funcionalidades y mockups para la vista previa del
-              sistema de cadenas de valor, asegurando la alineación con las
-              necesidades del cliente.
-            </p>
-          </article>
-        </li>
+      <section class="job-exp__content">
+        <ol class="job-exp__list">
+          <li class="job-exp__item">
+            <article class="job-exp__main-info">
+              <figure class="job-exp__figure">
+                <svg
+                  class="job-exp__date-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l352 0 0 256c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256z"
+                  ></path>
+                </svg>
+                <time datetime="2023-06" class="job-exp__date"
+                  >Junio 2023 - Febrero 2024</time
+                >
+              </figure>
+              <h3 class="job-exp__job">
+                Analista de Requerimientos -<b class="job-exp__black">
+                  OMEC MX
+                </b>
+              </h3>
+            </article>
+            <article class="job-exp__description">
+              <p class="job-exp__pharagraph">
+                Practicante responsable de la extracción de requerimientos y el
+                diseño de funcionalidades y mockups para la vista previa del
+                sistema de cadenas de valor, asegurando la alineación con las
+                necesidades del cliente.
+              </p>
+            </article>
+          </li>
+        </ol>
         <img
           src="/image/image-job-exp.svg"
           alt="Persona reposando en un escritorio"
           class="job-exp__image"
         />
-      </ol>
+      </section>
       <!-- fill="#124F88" -->
       <svg
         class="job-exp__wave-2"
@@ -653,6 +655,7 @@
             src="/image/photo-about-me.webp"
             alt="Foto - seccion sobre mi"
             class="about-me__photo"
+            loading="lazy"
           />
           <figure class="about-me__figure"></figure>
         </section>
@@ -693,6 +696,7 @@
         <a
           href="https://www.linkedin.com/in/calet-devia-bermudez/"
           target="_blank"
+          aria-label="Linkedin"
           class="floating-btns__social-link"
         >
           <svg
@@ -708,6 +712,7 @@
         <a
           href="https://github.com/Ledtius"
           target="_blank"
+          aria-label="GitHub"
           class="floating-btns__social-link"
         >
           <svg
@@ -723,6 +728,7 @@
         <a
           href="mailto:calebtius@gmail.com"
           target="_blank"
+          aria-label="Arrow button"
           class="floating-btns__social-link"
         >
           <svg

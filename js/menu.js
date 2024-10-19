@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const headerLinks = document.querySelectorAll("header a");
     const headerIcon = document.querySelector(".header__icon");
     const headerBtns = document.querySelector(".header__icon-menu-bttn ");
-    const whiteSections = document.querySelectorAll("#proyects, #about-me");
+    const whiteSections = document.querySelectorAll(".proyects, .about-me");
 
     const observerOptions = {
       root: null,

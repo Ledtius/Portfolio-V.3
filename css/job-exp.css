@@ -24,7 +24,6 @@
 }
 
 .job-exp__list {
-
   display: flex;
   align-items: center;
   flex-flow: column wrap;
@@ -53,6 +52,12 @@
 
 .job-exp__date {
   color: #dcdcdc;
+}
+
+.job-exp__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .job-exp__date-icon {
@@ -85,6 +90,7 @@
 
 .job-exp__pharagraph {
   margin: 2rem 0 1rem 2rem;
+  color:#e0e0e0;
 }
 
 .div {
@@ -111,9 +117,14 @@
   }
 
   .job-exp__list {
-    padding: 0 17.6rem;
+    padding: 0 17.6rem 0 0 ;
     flex-flow: row nowrap;
+  }
+  
+  .job-exp__content{
+    flex-direction: row;
     margin: 0rem 0rem 20rem 0rem;
+    
   }
 
   .job-exp__image {
