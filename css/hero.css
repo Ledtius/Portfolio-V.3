@@ -39,9 +39,6 @@
   text-align: center;
 }
 
-.hero__user-photo{
-}
-
 .hero__title {
   margin: 0;
   width: 190px;
@@ -50,8 +47,6 @@
   overflow: hidden;
   /* border-right: 1px solid; */
 }
-
-
 
 .hero__knowledge {
   font-weight: 550;
@@ -91,8 +86,6 @@
   border-radius: 100%;
 }
 
-
-
 @media (min-width: 1024px) {
   .hero {
     object-fit: cover;
@@ -123,7 +116,7 @@
     width: 260px;
   }
 
-  .hero__wave{
+  .hero__wave {
     bottom: -2px;
   }
 }
@@ -132,7 +125,7 @@
   .hero__item {
     /* width: 30rem; */
     position: relative;
-    bottom: 12rem;
+    bottom: 3rem;
     width: 464px;
     display: flex;
     flex-flow: row nowrap;

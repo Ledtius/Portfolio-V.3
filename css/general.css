@@ -37,7 +37,7 @@ body {
   display: grid;
   grid-template:
     /* "header" 94.8125px */
-    "hero" 30%
+    "hero" 25%
     "job-exp"
     "proyects"
     "skills"
@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.6rem;
     grid-template:
       /* "header" 110.812px */
-      "hero" 120vh
+      "hero" 125vh
       "job-exp"
       "proyects"
       "skills"
