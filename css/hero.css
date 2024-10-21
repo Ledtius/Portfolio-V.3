@@ -32,6 +32,11 @@
   min-width: 290px;
 }
 
+.hero__user-photo{
+  width: 100%;
+  height: auto;
+}
+
 .hero__description {
   display: flex;
   flex-flow: column nowrap;
@@ -49,7 +54,7 @@
 }
 
 .hero__knowledge {
-  font-weight: 550;
+  font-weight: 500;
   width: 260px;
 
   animation: writing 2.5s steps(35) forwards,
