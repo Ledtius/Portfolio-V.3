@@ -1,5 +1,15 @@
-/* Menu resposive */
+import '../css/general.css';
+import '../css/header.css';
+import '../css/hero.css';
+import '../css/job-exp.css';
+import '../css/proyects.css';
+import '../css/skills.css';
+import '../css/about-me.css';
+import '../css/footer.css';
+import '../css/flooting-btns.css';
 
+
+/* Menu resposive */
 const headerMenu = document.querySelector(".header__menu");
 const openMenuBtton = document.querySelector(".header__open-menu-bttn");
 const closeMenuBtton = document.querySelector(".header__close-menu-bttn");
