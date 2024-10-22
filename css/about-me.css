@@ -22,7 +22,6 @@
 
 .about-me__strong {
   color: #124f88;
-  
 }
 
 .about-me__photo-figure {
@@ -36,8 +35,8 @@
 .about-me__photo {
   z-index: 2;
   object-fit: cover;
-  width: 100%;
-  height: auto;
+  width: 306px;
+  height: 306px;
 }
 
 .about-me__figure {
@@ -97,11 +96,6 @@
   .about-me__photo-figure {
     display: flex;
     bottom: 5rem;
-  }
-
-  .about-me__photo {
-    object-fit: cover;
-    /* height: 20rem; */
   }
 
   .about-me__pharagraphs {
