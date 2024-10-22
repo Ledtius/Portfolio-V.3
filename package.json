@@ -11,6 +11,6 @@
     "cssnano": "^7.0.6"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --mode production"
   }
 }
