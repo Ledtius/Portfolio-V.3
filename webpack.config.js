@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin"); // Agregamos el plugin
 
 module.exports = {
   entry: "./js/menu.js",
@@ -34,6 +35,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./index.html",
       filename: "index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "_headers", to: "." }, 
+      ],
     }),
   ],
   optimization: {
