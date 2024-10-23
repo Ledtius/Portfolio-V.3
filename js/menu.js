@@ -13,6 +13,7 @@ import "../image/image-job-exp.svg";
 import "../image/photo-about-me.png";
 import "../image/photo-hero.webp";
 import "../image/proyect.webp";
+import "../image/mockup-1.webp";
 
 /* Menu resposive */
 const headerMenu = document.querySelector(".header__menu");
