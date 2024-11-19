@@ -3,9 +3,12 @@ header {
   width: 100%;
   background-color: transparent;
   backdrop-filter: blur(2rem);
+  /* background-color: #124f88; */
   /* back */
   position: fixed;
   opacity: 1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  /* color: red; */
 }
 
 .header__figure {
@@ -112,9 +115,7 @@ header {
 }
 
 @media (min-width: 1024px) {
-  body {
-    background-color: blue;
-  }
+
 
   .header__open-menu-bttn {
     display: none;

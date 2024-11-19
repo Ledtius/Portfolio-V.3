@@ -13,6 +13,7 @@ import "../image/image-job-exp.svg";
 import "../image/photo-about-me.png";
 import "../image/photo-hero.webp";
 import "../image/proyect.webp";
+import "../image/proyect-2.webp";
 /* import "../image/mockup-1.webp"; */
 
 /* Menu resposive */
@@ -40,12 +41,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const headerLinks = document.querySelectorAll("header a");
     const headerIcon = document.querySelector(".header__icon");
     const headerBtns = document.querySelector(".header__icon-menu-bttn ");
-    const whiteSections = document.querySelectorAll(".proyects, .about-me");
+    const whiteSections = document.querySelectorAll(
+      ".about-me, .proyects__obserer-target"
+    );
 
     const observerOptions = {
       root: null,
       threshold: 0.5,
     };
+    console.log(document.querySelector(".proyects"));
 
     const observer = new IntersectionObserver(function (entries) {
       entries.forEach((entry) => {
