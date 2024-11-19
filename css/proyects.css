@@ -3,7 +3,6 @@
   /* padding: 0 4rem; */
   padding: 2rem 4rem 20rem 4rem;
   position: relative;
-
 }
 
 .proyects__general{
@@ -18,6 +17,9 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
+
+.proyects__group {
 }
 
 .proyects__icon {
@@ -36,7 +38,7 @@
   align-items: center;
 }
 
-.proyects__general-text {
+.proyects__item-text {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -98,7 +100,11 @@
 
 .proyects__button {
   list-style: none;
+<<<<<<< HEAD
+  margin: 0 0 8rem 0;
+=======
   margin: 0 0 0rem 0;
+>>>>>>> ac8a4bd (Add the new proyect - CargaMax in the proyect section, problems with the header color in this secction too)
 }
 
 .proyects__button-icon {
@@ -120,6 +126,14 @@
 }
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
+  .proyects {
+    padding: 0 17.6rem 10rem 17.6rem;
+  }
+}
+@media (min-width: 1240px) {
+  .proyects__all {
+=======
 
 }
 
@@ -129,6 +143,7 @@
     padding: 2rem 17.6rem 20rem 17.6rem;
   }
   .proyects__presentation {
+>>>>>>> ac8a4bd (Add the new proyect - CargaMax in the proyect section, problems with the header color in this secction too)
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -148,6 +163,9 @@
     justify-content: center;
     list-style: none;
   }
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> ac8a4bd (Add the new proyect - CargaMax in the proyect section, problems with the header color in this secction too)
 }
