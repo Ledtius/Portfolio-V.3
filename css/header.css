@@ -1,8 +1,9 @@
 header {
   z-index: 3;
   width: 100%;
-  background-color: transparent;
-  backdrop-filter: blur(2rem);
+  /* background-color: transparent; */
+  background-color: #124f88;
+  /* backdrop-filter: blur(2rem); */
   /* background-color: #124f88; */
   /* back */
   position: fixed;
@@ -101,6 +102,9 @@ header {
 
 .header__link-item {
   color: #f2f2f2;
+  /* color: #c4b5b5a9; */
+  /* color: #2e2525c5; */
+  /* color: #fdd32ce1; */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -115,8 +119,6 @@ header {
 }
 
 @media (min-width: 1024px) {
-
-
   .header__open-menu-bttn {
     display: none;
   }
@@ -172,7 +174,6 @@ header {
     opacity: 1;
     width: 100%;
   }
-
 
   header {
     display: flex;

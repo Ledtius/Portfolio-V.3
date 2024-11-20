@@ -14,6 +14,8 @@ import "../image/photo-about-me.png";
 import "../image/photo-hero.webp";
 import "../image/proyect.webp";
 import "../image/proyect-2.webp";
+import "../image/proyect-3.webp";
+import "../image/proyect-4.webp";
 /* import "../image/mockup-1.webp"; */
 
 /* Menu resposive */
@@ -36,51 +38,53 @@ headerLinkItems.forEach((link) => {
 
 /* Letters color - Header */
 
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth) {
-    const headerLinks = document.querySelectorAll("header a");
-    const headerIcon = document.querySelector(".header__icon");
-    const headerBtns = document.querySelector(".header__icon-menu-bttn ");
-    const whiteSections = document.querySelectorAll(
-      ".about-me, .proyects__obserer-target"
-    );
+// document.addEventListener("DOMContentLoaded", function () {
+//   if (window.innerWidth) {
+//     const headerLinks = document.querySelectorAll("header a");
+//     const headerIcon = document.querySelector(".header__icon");
+//     const headerBtns = document.querySelector(".header__icon-menu-bttn ");
+//     const whiteSections = document.querySelectorAll(
+//       ".about-me, .proyects__obserer-target"
+//     );
 
-    const observerOptions = {
-      root: null,
-      threshold: 0.5,
-    };
-    console.log(document.querySelector(".proyects"));
+//     const observerOptions = {
+//       root: null,
+//       threshold: 0.5,
+//     };
+//     console.log(document.querySelector(".proyects"));
 
-    const observer = new IntersectionObserver(function (entries) {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          headerLinks.forEach((link) => {
-            link.style.color = "#124f88";
-            link.style.setProperty("--line-color", "#124f88");
-          });
-          if (headerIcon) {
-            headerIcon.style.fill = "#124f88";
-          }
-          if (headerBtns) {
-            headerBtns.style.fill = "#124f88";
-          }
-        } else {
-          headerLinks.forEach((link) => {
-            link.style.color = "#f2f2f2";
-            link.style.setProperty("--line-color", "#f2f2f2");
-          });
-          if (headerIcon) {
-            headerIcon.style.fill = "#f2f2f2";
-          }
-          if (headerBtns) {
-            headerBtns.style.fill = "#f2f2f2";
-          }
-        }
-      });
-    }, observerOptions);
+//     const observer = new IntersectionObserver(function (entries) {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           headerLinks.forEach((link) => {
+//             link.style.color = "#124f88";
+//             link.style.setProperty("--line-color", "#124f88");
+//           });
+//           if (headerIcon) {
+//             headerIcon.style.fill = "#124f88";
+//           }
+//           if (headerBtns) {
+//             headerBtns.style.fill = "#124f88";
+//           }
+//         } else {
+//           headerLinks.forEach((link) => {
+//             link.style.color = "#f2f2f2";
+//             link.style.setProperty("--line-color", "#f2f2f2");
+//           });
+//           if (headerIcon) {
+//             headerIcon.style.fill = "#f2f2f2";
+//           }
+//           if (headerBtns) {
+//             headerBtns.style.fill = "#f2f2f2";
+//           }
+//         }
+//       });
+//     }, observerOptions);
 
-    whiteSections.forEach((section) => {
-      observer.observe(section);
-    });
-  }
-});
+//     whiteSections.forEach((section) => {
+//       observer.observe(section);
+//     });
+//   }
+// });
+
+

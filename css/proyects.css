@@ -11,6 +11,13 @@
   gap: 8rem;
 }
 
+.proyects__title{
+  text-align: center;
+  margin-top: 10rem;
+  /* width: fit-content; */
+  max-width: 24rem;
+}
+
 .proyects__icon-title {
   display: flex;
   margin: 0 0 2.8rem 0;
@@ -23,6 +30,7 @@
 }
 
 .proyects__icon {
+  margin-top: 8rem;
   width: 3rem;
   height: 3rem;
 }
@@ -33,6 +41,8 @@
 }
 
 .proyects__title-proyect {
+  /* max-width: 25rem; */
+  /* font-size: 2.2rem; */
 }
 
 .proyects__presentation {
@@ -131,6 +141,10 @@
     padding: 0 17.6rem 25rem 17.6rem;
   }
 
+  .proyects__title{
+
+    max-width: 100%;
+  }
 
   .proyects__presentation {
     flex-direction: row;
