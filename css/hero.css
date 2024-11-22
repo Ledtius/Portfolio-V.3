@@ -55,7 +55,7 @@
 
 .hero__knowledge {
   font-weight: 500;
-  width: 260px;
+  width: 240px;
 
   animation: writing 2.5s steps(35) forwards,
     transparent 0.5s step-end infinite alternate;
@@ -72,7 +72,7 @@
     width: 0px;
   }
   100% {
-    width: 260px;
+    width: 240px;
     visibility: visible;
   }
 }
