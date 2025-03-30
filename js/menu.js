@@ -16,7 +16,10 @@ import "../image/proyect.webp";
 import "../image/proyect-2.webp";
 import "../image/proyect-3.webp";
 import "../image/proyect-4.webp";
-import "../image/mockup-public.webp"; 
+import "../image/calculator-pc-mockup.webp";
+import "../image/todo-list-pc-mockup.webp";
+import "../image/weather-app-pc-mockup.webp";
+import "../image/mockup-public.webp";
 
 /* Menu resposive */
 const headerMenu = document.querySelector(".header__menu");
@@ -86,5 +89,3 @@ headerLinkItems.forEach((link) => {
 //     });
 //   }
 // });
-
-
