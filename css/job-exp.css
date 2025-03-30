@@ -35,6 +35,7 @@
   /* margin: 4rem 0 0 0; */
   width: 100%;
   height: 100%;
+
   max-width: 20rem;
   margin: 0 0 20rem 0;
 }
@@ -55,7 +56,7 @@
   color: #dcdcdc;
 }
 
-.job-exp__content{
+.job-exp__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +92,7 @@
 
 .job-exp__pharagraph {
   margin: 2rem 0 1rem 2rem;
-  color:#e0e0e0;
+  color: #e0e0e0;
 }
 
 .div {
@@ -117,21 +118,27 @@
     max-width: 60rem;
   }
 
+  .job-exp__description{
+    max-width: 50rem;
+  }
+
   .job-exp__list {
-    padding: 0 17.6rem 0 0 ;
+    padding: 0 17.6rem 0 0;
+    /* padding: 0 10.6rem 0 0; */
     flex-flow: row nowrap;
   }
-  
-  .job-exp__content{
+
+  .job-exp__content {
     flex-direction: row;
     margin: 0rem 0rem 20rem 0rem;
-    
   }
 
   .job-exp__image {
     /* margin: 4rem 0 0 0; */
-    width: 100%;
-    max-width: 20rem;
-    margin: 0 0 0 0;
+    /* width: 20rem; */
+    width: 20rem;
+    height: 20rem;
+    max-width: none;
+    margin: 0 10rem 0 0;
   }
 }

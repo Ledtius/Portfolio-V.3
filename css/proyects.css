@@ -31,8 +31,8 @@
 
 .proyects__icon {
   margin-top: 8rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .proyects__tech-icon {
@@ -153,14 +153,18 @@
   }
   .proyects__description {
     text-align: justify;
-
   }
-  
+
   .proyects__presentation--reverse {
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 1240px) {
+  .proyects__icon {
+    margin-top: 7rem;
+    width: 4rem;
+    height: 4rem;
+  }
   .proyects__all {
     display: flex;
     flex-flow: row nowrap;
@@ -168,10 +172,9 @@
     gap: 8rem;
     justify-content: center;
   }
-  
+
   .proyects__description {
     text-align: center;
-
   }
   .proyects__description {
     max-width: 40rem;
