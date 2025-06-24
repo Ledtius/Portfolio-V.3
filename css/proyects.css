@@ -40,6 +40,10 @@
   height: 4rem;
 }
 
+.proyects__tech-icon--react {
+  fill: #00d1f7;
+}
+
 .proyects__title-proyect {
   /* max-width: 25rem; */
   /* font-size: 2.2rem; */
