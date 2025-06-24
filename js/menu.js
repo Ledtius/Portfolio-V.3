@@ -20,6 +20,7 @@ import "../image/calculator-pc-mockup.webp";
 import "../image/todo-list-pc-mockup.webp";
 import "../image/weather-app-pc-mockup.webp";
 import "../image/mockup-public.webp";
+import "../image/task-management-mockup.webp";
 
 /* Menu resposive */
 const headerMenu = document.querySelector(".header__menu");
