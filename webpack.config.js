@@ -3,14 +3,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin"); // Agregamos el plugin
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./js/menu.js",
   output: {
-    filename: "bundle.js",
+    filename: "bundle.[contenthash].js", // hash en JS
     path: path.resolve(__dirname, "dist"),
-    clean: true,
+    clean: true, // limpia dist antes de cada build
   },
   mode: "production",
   module: {
@@ -30,7 +30,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles.css",
+      filename: "styles.[contenthash].css", // hash en CSS
     }),
     new HtmlWebpackPlugin({
       template: "./index.html",
@@ -38,7 +38,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "_headers", to: "." }, 
+        { from: "_headers", to: "." }, // sigue copiando headers si lo tienes
       ],
     }),
   ],
