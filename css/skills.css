@@ -34,7 +34,9 @@
   grid-template-areas:
     "html css"
     "js react"
-    "git github ";
+    "git github"
+    "tailwind tailwind"
+    ;
   gap: 3rem;
 }
 
@@ -44,7 +46,7 @@
   flex-flow: column nowrap;
   align-items: center;
   gap: 8px;
-  border-radius: 72% 58% 52% 100% / 46% 78% 72% 63%;
+  border-radius: 72% 58% 68% 100% / 46% 78% 72% 63%;
   padding: 1rem;
   background-color: #f2f2f2;
   font-weight: 600;
@@ -70,9 +72,13 @@
   width: 16rem;
 }
 .skills__tech:nth-child(5) {
-  grid-area: github;
+  grid-area: tailwind;
+  width: 16rem;
 }
 .skills__tech:nth-child(6) {
+  grid-area: github;
+}
+.skills__tech:nth-child(7) {
   grid-area: git;
 }
 
@@ -86,7 +92,8 @@
     margin: 10rem 0 10rem 0;
     grid-template-areas:
       "html  js  github"
-      "css  react git";
+      "css  react git"
+      "tailwind tailwind tailwind";
 
     gap: 3rem;
   }
@@ -123,9 +130,13 @@
       " .   css . git    ."
       " .   css . git    ."; */
 
+    /* grid-template-areas:
+      "html css  js  react github  git  tailwind"
+      ".    css  .   react  .      git ."; */
     grid-template-areas:
-      "html css  js  react github  git "
-      ".    css  .   react  .      git";
+      "html css  js  react github  git"
+      ".    css  .   react  .      git"
+      "tailwind tailwind tailwind tailwind tailwind tailwind";
     align-items: center;
     justify-items: center;
   }

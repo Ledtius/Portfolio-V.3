@@ -106,10 +106,27 @@
   align-items: center;
   padding: 1rem;
   border-radius: 1.6rem;
-  background-color: #b0b0b0;
-  border: 1px solid #b0b0b0;
+
   /* justify-content: center; */
   transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.proyects__link--github {
+  background-color: #24292ebd;
+  color: #ffffff;
+  fill: #ffff;
+}
+
+.proyects__link--url {
+  background-color: #eb9225fe;
+  color: #ffffff;
+  fill: #ffff;
+}
+
+.proyects__link--docs {
+  background-color: #124f88;
+  color: #ffffff;
+  fill: #ffff;
 }
 
 .proyects__link:hover {

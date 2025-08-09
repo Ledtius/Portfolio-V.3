@@ -36,7 +36,7 @@
   width: 100%;
   height: 100%;
 
-  max-width: 20rem;
+  max-width: 30rem;
   margin: 0 0 20rem 0;
 }
 
@@ -83,7 +83,7 @@
   content: "";
   position: absolute;
   background-color: #a8a8a8;
-  height: 85%;
+  height: 90%;
   width: 3px;
   left: 7px;
   border-left: 1px solid #a8a8a8;
@@ -136,8 +136,8 @@
   .job-exp__image {
     /* margin: 4rem 0 0 0; */
     /* width: 20rem; */
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     max-width: none;
     margin: 0 10rem 0 0;
   }
