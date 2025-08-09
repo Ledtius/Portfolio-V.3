@@ -9,7 +9,7 @@ import "../css/footer.css";
 import "../css/flooting-btns.css";
 import "../image/favicon.ico";
 import "../image/hero-bg.webp";
-import "../image/image-job-exp2.svg";
+import "../image/image-job-exp.svg";
 import "../image/photo-about-me.png";
 import "../image/photo-hero.webp";
 import "../image/proyect.webp";
