@@ -36,11 +36,6 @@ module.exports = {
       template: "./index.html",
       filename: "index.html",
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: "_headers", to: "." }, 
-      ],
-    }),
   ],
   optimization: {
     minimize: true,
