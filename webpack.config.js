@@ -23,7 +23,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         type: "asset/resource",
         generator: {
-          filename: "image/[name].[contenthash][ext]",
+          filename: "image/[name].[ext]",
         },
       },
     ],
