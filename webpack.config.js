@@ -11,14 +11,39 @@ module.exports = {
     filename: "bundle.[contenthash].js", // hash en JS
     path: path.resolve(__dirname, "dist"),
     clean: true, // limpia dist antes de cada build
+    assetModuleFilename: "image/[name].[contenthash][ext]", // por si se usa asset/resource global
   },
   mode: "production",
   module: {
     rules: [
+      // Para procesar HTML y detectar imágenes
       {
-        test: /\.css$/,
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          sources: {
+            list: [
+              "...", // incluye las reglas por defecto
+              {
+                tag: "img",
+                attribute: "src",
+                type: "src",
+              },
+              {
+                tag: "link",
+                attribute: "href",
+                type: "src",
+              },
+            ],
+          },
+        },
+      },
+      // Para CSS
+      {
+        test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+      // Para imágenes y otros assets
       {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         type: "asset/resource",
@@ -38,7 +63,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "_headers", to: "." }, // sigue copiando headers si lo tienes
+        { from: "_headers", to: "." }, // copia headers para Netlify
       ],
     }),
   ],
