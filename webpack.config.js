@@ -8,9 +8,9 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: "./js/menu.js",
   output: {
-    filename: "bundle.[contenthash].js", // Hash en JS
+    filename: "bundle.[contenthash].js", // hash en JS
     path: path.resolve(__dirname, "dist"),
-    clean: true, // Limpia dist antes de cada build
+    clean: true, // limpia dist antes de cada build
   },
   mode: "production",
   module: {
@@ -23,31 +23,14 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         type: "asset/resource",
         generator: {
-          filename: "image/[name].[contenthash][ext]", // Hash en imágenes
-        },
-      },
-      {
-        test: /\.html$/i,
-        loader: "html-loader", // 👈 Necesario para procesar imágenes en HTML
-        options: {
-          sources: {
-            list: [
-              // Procesa atributos src, srcset, etc.
-              "...",
-              {
-                tag: "img",
-                attribute: "src",
-                type: "src",
-              },
-            ],
-          },
+          filename: "image/[name].[contenthash][ext]",
         },
       },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles.[contenthash].css", // Hash en CSS
+      filename: "styles.[contenthash].css", // hash en CSS
     }),
     new HtmlWebpackPlugin({
       template: "./index.html",
@@ -55,7 +38,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "_headers", to: "." }, // Copia headers si existen
+        { from: "_headers", to: "." }, // sigue copiando headers si lo tienes
       ],
     }),
   ],
