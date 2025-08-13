@@ -3,14 +3,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./js/menu.js",
   output: {
-    filename: "bundle.[contenthash].js", // hash en JS
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true, // limpia dist antes de cada build
+    clean: true,
   },
   mode: "production",
   module: {
@@ -23,23 +22,19 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         type: "asset/resource",
         generator: {
-          filename: "image/[name].[ext]",
+          filename: "images/[name][ext]",
+          filename: "image/[name][ext]",
         },
       },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles.[contenthash].css", // hash en CSS
+      filename: "styles.css",
     }),
     new HtmlWebpackPlugin({
       template: "./index.html",
       filename: "index.html",
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: "_headers", to: "." }, // sigue copiando headers si lo tienes
-      ],
     }),
   ],
   optimization: {
