@@ -19,6 +19,7 @@ import "../image/proyect-4.webp";
 import "../image/calculator-pc-mockup.webp";
 import "../image/todo-list-pc-mockup.webp";
 import "../image/weather-app-pc-mockup.webp";
+import "../image/blackjack-mockup.webp";
 import "../image/mockup-public.webp";
 import "../image/task-management-mockup.webp";
 import "../image/mockupBookFinder.webp";
