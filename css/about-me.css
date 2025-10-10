@@ -38,7 +38,25 @@
   object-fit: cover;
   width: 306px;
   height: 306px;
+  position: relative;
+  top: 1.5rem;
 }
+
+/* .about-me__photo-figure::after {
+  position: relative;
+  content: "";
+  color: red;
+  background-color: #14476e;
+  border: 1px solid #124f88;
+  filter: blur(1rem);
+  border-radius: 100%;
+  width: 23rem;
+  height: 30rem;
+  opacity: 0.4;
+
+  z-index: 1;
+  bottom: 29rem;
+} */
 
 .about-me__figure {
   position: absolute;
@@ -46,7 +64,7 @@
   height: 30rem;
   width: 30rem;
   z-index: 1;
-  border-radius: 44% 56% 42% 68% / 61% 49% 51% 39%;
+  border-radius: 44% 56% 42% 58% / 61% 49% 51% 39%;
   border: 1px solid #124f88;
   background-color: #124f88;
 }
