@@ -25,13 +25,14 @@ html {
 body {
   position: relative;
   font-size: 1.6rem;
-  min-height: 300vh;
+  /* min-height: 300vh; */
+  /* height: fit-content; */
   margin: 0;
   display: grid;
   grid-template:
-    "hero" 25%
+    "hero"
     "job-exp"
-    "proyects"
+    "projects"
     "skills"
     "about-me"
     "footer";
@@ -54,10 +55,9 @@ body::-webkit-scrollbar-thumb {
   body {
     font-size: 1.6rem;
     grid-template:
-
-      "hero" 125vh
+      "hero"
       "job-exp"
-      "proyects"
+      "projects"
       "skills"
       "about-me"
       "footer";
@@ -71,9 +71,9 @@ body::-webkit-scrollbar-thumb {
   body {
     font-size: 1.6rem;
     grid-template:
-      "hero" 140vh
+      "hero"
       "job-exp"
-      "proyects"
+      "projects"
       "skills"
       "about-me"
       "footer";
@@ -92,8 +92,8 @@ header {
   grid-area: job-exp;
 }
 
-.proyects {
-  grid-area: proyects;
+.projects {
+  grid-area: projects;
 }
 
 .skills {

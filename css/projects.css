@@ -1,24 +1,24 @@
-.proyects {
+.projects {
   background-color: #f2f2f2;
   /* padding: 0 4rem; */
   padding: 2rem 4rem 25rem 4rem;
   position: relative;
 }
 
-.proyects__general {
+.projects__general {
   display: flex;
   flex-direction: column;
   gap: 8rem;
 }
 
-.proyects__title {
+.projects__title {
   text-align: center;
   margin-top: 10rem;
   /* width: fit-content; */
   max-width: 24rem;
 }
 
-.proyects__icon-title {
+.projects__icon-title {
   display: flex;
   margin: 0 0 2.8rem 0;
   align-items: center;
@@ -26,50 +26,50 @@
   gap: 8px;
 }
 
-.proyects__group {
+.projects__group {
 }
 
-.proyects__icon {
+.projects__icon {
   margin-top: 8rem;
   width: 4rem;
   height: 4rem;
 }
 
-.proyects__tech-icon {
+.projects__tech-icon {
   width: 4rem;
   height: 4rem;
 }
 
-.proyects__tech-icon--react {
+.projects__tech-icon--react {
   fill: #00d1f7;
 }
 
-.proyects__title-proyect {
+.projects__title-project {
   /* max-width: 25rem; */
   /* font-size: 2.2rem; */
 }
 
-.proyects__presentation {
+.projects__presentation {
   text-align: center;
   display: flex;
   flex-flow: column-reverse nowrap;
   align-items: center;
 }
 
-.proyects__item-text {
+.projects__item-text {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
 }
 
-.proyects__mockup {
+.projects__mockup {
   margin: 4rem 0;
   width: 28rem;
   height: auto;
 }
 
-.proyects__techs-list {
+.projects__techs-list {
   padding: 0;
   display: flex;
   align-items: center;
@@ -78,7 +78,7 @@
   list-style: none;
 }
 
-.proyects__tech {
+.projects__tech {
   padding: 1rem;
   background-color: white;
   border-radius: 1rem;
@@ -87,7 +87,7 @@
   flex-direction: column;
 }
 
-.proyects__buttons-list {
+.projects__buttons-list {
   padding: 0;
   list-style: none;
   display: flex;
@@ -98,7 +98,7 @@
   gap: 4rem;
 }
 
-.proyects__link {
+.projects__link {
   text-decoration: none;
   color: black;
   gap: 8px;
@@ -111,44 +111,44 @@
   transition: transform ease 0.5s, box-shadow ease 0.5s;
 }
 
-.proyects__link--github {
+.projects__link--github {
   background-color: #24292ebd;
   color: #ffffff;
   fill: #ffff;
 }
 
-.proyects__link--url {
+.projects__link--url {
   background-color: #eb9225fe;
   color: #ffffff;
   fill: #ffff;
 }
 
-.proyects__link--docs {
+.projects__link--docs {
   background-color: #124f88;
   color: #ffffff;
   fill: #ffff;
 }
 
-.proyects__link:hover {
+.projects__link:hover {
   transform: scale(1.04);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.proyects__button {
+.projects__button {
   list-style: none;
   /* margin: 0 0 8rem 0; */
 }
 
-.proyects__button-icon {
+.projects__button-icon {
   height: 2.8rem;
   width: 2.8rem;
 }
 
-.proyects__description {
+.projects__description {
   max-width: 40rem;
 }
 
-.proyects__wave {
+.projects__wave {
   margin: 1rem 0 0 0;
   position: absolute;
   width: 100%;
@@ -158,35 +158,35 @@
 }
 
 @media (min-width: 768px) {
-  .proyects {
+  .projects {
     padding: 0 17.6rem 25rem 17.6rem;
   }
 
-  .proyects__title {
+  .projects__title {
     max-width: 100%;
   }
 
-  .proyects__presentation {
+  .projects__presentation {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 4rem;
   }
-  .proyects__description {
+  .projects__description {
     text-align: justify;
   }
 
-  .proyects__presentation--reverse {
+  .projects__presentation--reverse {
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 1240px) {
-  .proyects__icon {
+  .projects__icon {
     margin-top: 7rem;
     width: 4rem;
     height: 4rem;
   }
-  .proyects__all {
+  .projects__all {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -194,14 +194,14 @@
     justify-content: center;
   }
 
-  .proyects__description {
+  .projects__description {
     text-align: center;
   }
-  .proyects__description {
+  .projects__description {
     max-width: 40rem;
   }
 
-  .proyects__techs-list {
+  .projects__techs-list {
     padding: 0;
     display: flex;
     align-items: center;

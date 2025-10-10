@@ -2,20 +2,20 @@ import "../css/general.css";
 import "../css/header.css";
 import "../css/hero.css";
 import "../css/job-exp.css";
-import "../css/proyects.css";
+import "../css/projects.css";
 import "../css/skills.css";
 import "../css/about-me.css";
 import "../css/footer.css";
-import "../css/flooting-btns.css";
+import "../css/floating-btns.css";
 import "../image/favicon.ico";
 import "../image/hero-bg.webp";
 import "../image/image-job-exp.svg";
 import "../image/photo-about-me.png";
 import "../image/photo-hero.webp";
-import "../image/proyect.webp";
-import "../image/proyect-2.webp";
-import "../image/proyect-3.webp";
-import "../image/proyect-4.webp";
+import "../image/project.webp";
+import "../image/project-2.webp";
+import "../image/project-3.webp";
+import "../image/project-4.webp";
 import "../image/calculator-pc-mockup.webp";
 import "../image/todo-list-pc-mockup.webp";
 import "../image/weather-app-pc-mockup.webp";
@@ -50,14 +50,14 @@ headerLinkItems.forEach((link) => {
 //     const headerIcon = document.querySelector(".header__icon");
 //     const headerBtns = document.querySelector(".header__icon-menu-bttn ");
 //     const whiteSections = document.querySelectorAll(
-//       ".about-me, .proyects__obserer-target"
+//       ".about-me, .projects__obserer-target"
 //     );
 
 //     const observerOptions = {
 //       root: null,
 //       threshold: 0.5,
 //     };
-//     console.log(document.querySelector(".proyects"));
+//     console.log(document.querySelector(".projects"));
 
 //     const observer = new IntersectionObserver(function (entries) {
 //       entries.forEach((entry) => {

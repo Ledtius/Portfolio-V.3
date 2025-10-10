@@ -5,9 +5,10 @@
   background-size: cover;
   background-attachment: fixed;
   /* object-position: center center; */
+  height: 100vh;
   background-position: 40%;
   background-repeat: no-repeat;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .hero__presentation {
@@ -20,7 +21,8 @@
 
 .hero__item {
   position: relative;
-  bottom: 20rem;
+  bottom: 6rem;
+  /* top: rem; */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -32,7 +34,7 @@
   min-width: 290px;
 }
 
-.hero__user-photo{
+.hero__user-photo {
   width: 100%;
   height: auto;
 }
@@ -148,3 +150,4 @@
     width: 260px;
   }
 }
+
