@@ -26,60 +26,98 @@
 }
 
 .skills__techs {
-  /* padding: 0; */
+  padding: 0;
   margin: 10rem 0 10rem 0;
   display: grid;
   align-content: center;
   justify-content: center;
   grid-template-areas:
-    "html css"
-    "js react"
-    "git github"
-    "tailwind tailwind"
-    ;
+    "html"
+    "css"
+    "js"
+    "react"
+    "tailwind"
+    "git"
+    "github";
   gap: 3rem;
 }
 
+@keyframes wave-effect {
+  0%,
+  100% {
+    bottom: -5px;
+    transform: rotate(-1deg);
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    bottom: 5px;
+    transform: rotate(1deg);
+  }
+}
+
 .skills__tech {
+  position: relative;
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   gap: 8px;
-  border-radius: 72% 58% 68% 100% / 46% 78% 72% 63%;
+  border-radius: 1rem;
   padding: 1rem;
+  min-width: 16rem;
+  /* background-color: #f2f2f2; */
   background-color: #f2f2f2;
   font-weight: 600;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+
 .skills__tech-icon {
   width: 8rem;
   height: 8rem;
 }
+.skills__tech-icon--github {
+  /* fill: red; */
+  /* stroke: black; */
+  /* height: 20rem;
+  width: 20rem; */
+}
+.skills__tech-icon--tw {
+  /* height: 6rem;
+  width: 6rem; */
+}
+
 .skills__tech:nth-child(1) {
   grid-area: html;
+  animation: wave-effect 2.1s infinite;
 }
 .skills__tech:nth-child(2) {
   grid-area: css;
+  animation: wave-effect 2.2s infinite;
 }
 .skills__tech:nth-child(3) {
   grid-area: js;
-  width: 16rem;
+  width: 10rem;
   align-self: center;
   justify-self: center;
+  animation: wave-effect 2.1s infinite;
 }
 .skills__tech:nth-child(4) {
   grid-area: react;
   width: 16rem;
+  animation: wave-effect 2.2s infinite;
 }
 .skills__tech:nth-child(5) {
   grid-area: tailwind;
   width: 16rem;
+  animation: wave-effect 2.1s infinite;
 }
 .skills__tech:nth-child(6) {
   grid-area: github;
+  animation: wave-effect 2.2s infinite;
 }
 .skills__tech:nth-child(7) {
   grid-area: git;
+  animation: wave-effect 2.1s infinite;
 }
 
 .skills__wave {
@@ -87,14 +125,37 @@
   bottom: -9px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 420px) {
   .skills__techs {
+    grid-template-areas:
+      "html html css css"
+      "js js react react"
+      "git git github github"
+      ". tailwind tailwind .";
+  }
+}
+
+@media (min-width: 768px) {
+  /* Zig Zag pattern */
+  /* .skills__techs {
     margin: 10rem 0 10rem 0;
     grid-template-areas:
       "html  js  github"
       "css  react git"
       "tailwind tailwind tailwind";
-
+    gap: 3rem;
+  } */
+  .skills__techs {
+    margin: 10rem 0 10rem 0;
+    grid-template-areas:
+      "html  css "
+      "html  css"
+      "js react"
+      "js react"
+      "git github"
+      "git github"
+      "tailwind tailwind"
+      "tailwind tailwind";
     gap: 3rem;
   }
 
@@ -125,6 +186,14 @@
     width: 100%;
     padding: 0 17.6rem;
     margin: 10rem 0 0 0;
+    grid-template-areas:
+      "html css  js  react  tailwind"
+      "html css  js  react  tailwind"
+      "html git  js  github tailwind"
+      "html git  js  github tailwind";
+    align-items: center;
+    justify-items: center;
+
     /* grid-template-areas:
       "html css js git github"
       " .   css . git    ."
@@ -133,12 +202,6 @@
     /* grid-template-areas:
       "html css  js  react github  git  tailwind"
       ".    css  .   react  .      git ."; */
-    grid-template-areas:
-      "html css  js  react github  git"
-      ".    css  .   react  .      git"
-      "tailwind tailwind tailwind tailwind tailwind tailwind";
-    align-items: center;
-    justify-items: center;
   }
 
   .skills__tech:nth-child(3) {
