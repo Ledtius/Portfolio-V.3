@@ -30,6 +30,12 @@ const openMenuBtton = document.querySelector(".header__open-menu-bttn");
 const closeMenuBtton = document.querySelector(".header__close-menu-bttn");
 const headerLinkItems = document.querySelectorAll(".header__link-item");
 
+/* Load the page - scroll in the beginning  */
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+
 function toggleMenu() {
   headerMenu.classList.toggle("menu__opened");
 }

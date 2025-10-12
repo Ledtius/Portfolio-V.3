@@ -32,6 +32,35 @@
   color: #f2f2f2;
   padding: 1.2rem;
   min-width: 290px;
+  animation: appear-item 1s,shadow-light 2s infinite;
+  /* animation-duration: 1s;
+  animation-name: shadow-light;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-out; */
+}
+
+@keyframes shadow-light {
+  0%,100% {
+    box-shadow: 0px 4px 12px rgba(251, 251, 251, 0.481);
+  }
+  50% {
+    box-shadow: 0px 8px 14px rgba(255, 255, 255, 0.666);
+  }
+  /* 100% {
+    box-shadow: 0px 4px 12px rgba(251, 251, 251, 0.271);
+  } */
+}
+
+@keyframes appear-item {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .hero__user-photo {
@@ -49,7 +78,7 @@
 .hero__title {
   margin: 0;
   width: 190px;
-  animation: writing 2.5s steps(35), transparent 0.5s step-end alternate;
+  animation: writing 1.5s steps(35), transparent 0.5s step-end alternate;
   white-space: nowrap;
   overflow: hidden;
   /* border-right: 1px solid; */
@@ -57,15 +86,15 @@
 
 .hero__knowledge {
   font-weight: 500;
-  width: 240px;
+  /* width: 240px; */
 
-  animation: writing 2.5s steps(35) forwards,
+  animation: writing 1.5s steps(35) forwards,
     transparent 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   visibility: hidden;
   border-right: 1px solid;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 @keyframes writing {
@@ -74,7 +103,7 @@
     width: 0px;
   }
   100% {
-    width: 240px;
+    width: 230px;
     visibility: visible;
   }
 }
@@ -150,4 +179,3 @@
     width: 260px;
   }
 }
-
