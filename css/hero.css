@@ -32,7 +32,8 @@
   color: #f2f2f2;
   padding: 1.2rem;
   min-width: 290px;
-  animation: appear-item 1s,shadow-light 2s infinite;
+  box-shadow: 0px 4px 12px rgba(251, 251, 251, 0.481);
+  animation: appear-item 1s;
   /* animation-duration: 1s;
   animation-name: shadow-light;
   animation-iteration-count: infinite;
@@ -41,7 +42,8 @@
 }
 
 @keyframes shadow-light {
-  0%,100% {
+  0%,
+  100% {
     box-shadow: 0px 4px 12px rgba(251, 251, 251, 0.481);
   }
   50% {
