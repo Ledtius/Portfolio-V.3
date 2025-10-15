@@ -26,43 +26,19 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  /* justify-content: center; */
   background-color: transparent;
   backdrop-filter: blur(1rem);
   border-radius: 2rem;
   color: #f2f2f2;
   padding: 1.2rem;
   min-width: 290px;
-  box-shadow: 0px 4px 12px rgba(251, 251, 251, 0.481);
-  animation: appear-item 1s;
+ 
   /* animation-duration: 1s;
   animation-name: shadow-light;
   animation-iteration-count: infinite;
   animation-duration: 2s;
   animation-timing-function: ease-out; */
-}
-
-@keyframes shadow-light {
-  0%,
-  100% {
-    box-shadow: 0px 4px 12px rgba(251, 251, 251, 0.481);
-  }
-  50% {
-    box-shadow: 0px 8px 14px rgba(255, 255, 255, 0.666);
-  }
-  /* 100% {
-    box-shadow: 0px 4px 12px rgba(251, 251, 251, 0.271);
-  } */
-}
-
-@keyframes appear-item {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 .hero__user-photo {

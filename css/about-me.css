@@ -15,7 +15,7 @@
   gap: 8px;
 }
 
-.about-me__pharagraphs {
+.about-me__paragraphs {
   text-align: justify;
   /* text-align: center; */
   padding: 0 4rem;
@@ -117,7 +117,7 @@
     bottom: 5rem;
   }
 
-  .about-me__pharagraphs {
+  .about-me__paragraphs {
     /* text-align: unset; */
     text-align: justify;
     max-width: 70rem;
