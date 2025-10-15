@@ -145,6 +145,17 @@ footer {
   }
 }
 
+@keyframes appear-y-item {
+  0% {
+    opacity: 0;
+    transform: translateY(150px) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @keyframes image-reveal {
   from {
     filter: saturate(0) contrast(4) brightness(0.1) blur(5px);
@@ -225,10 +236,16 @@ footer {
   animation-range: entry 25% cover 50%;
 }
 
-.about-me__photo{
-  animation: appear-item both;
+.about-me__photo {
+  animation: appear-y-item both;
   animation-timeline: view();
   animation-range: entry 25% cover 50%;
+}
+
+.about-me__button {
+  animation: appear-item both;
+  animation-timeline: view();
+  animation-range: entry 5% cover 10%;
 }
 /* .fade-up-item:nth-child(1) {
   animation-range: entry 5% cover 10%;
