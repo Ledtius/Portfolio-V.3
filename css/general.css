@@ -49,7 +49,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #124F88;
-  border-radius: 2rem;
+  border-radius: 2.1rem;
 }
 
 @media (min-width: 768px) {
