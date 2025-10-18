@@ -30,6 +30,8 @@
   background-color: #0a66c2;
   fill: white;
   transition: background-color 0.5s, fill 0.5s;
+  animation: trans-y-appear;
+  animation-duration: 0.4s;
 }
 
 .floating-btns__social-link:nth-child(1):hover {
@@ -43,6 +45,8 @@
   background-color: black;
   fill: white;
   transition: background-color 0.5s, fill 0.5s;
+  animation: trans-y-appear;
+  animation-duration: 0.8s;
 }
 
 .floating-btns__social-link:nth-child(2):hover {
@@ -58,6 +62,8 @@
   background-color: #cf3b37;
   fill: white;
   transition: background-color 0.5s, fill 0.5s;
+  animation: trans-y-appear;
+  animation-duration: 1.2s;
 }
 
 .floating-btns__social-link:nth-child(3):hover {
@@ -65,6 +71,12 @@
   border-radius: 1rem;
   background-color: white;
   fill: #cf3b37;
+}
+
+/* Arrow */
+.floating-btns__link:nth-child(2) {
+  animation: appear-item;
+  animation-duration: 1.2s;
 }
 
 .floating-btns__link {
@@ -81,7 +93,6 @@
   animation: size-animation;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 2s;
 }
 
 @keyframes size-animation {
