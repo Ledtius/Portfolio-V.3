@@ -40,15 +40,16 @@ body {
 
 body::-webkit-scrollbar {
   width: 12px;
+  padding:20px;
 }
 
 body::-webkit-scrollbar-track {
-  background: white;
+  background-color: #f2f2f2;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: grey;
-  border-radius: 20px;
+  background-color: #124F88;
+  border-radius: 2rem;
 }
 
 @media (min-width: 768px) {
